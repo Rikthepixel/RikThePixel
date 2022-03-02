@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      Sup x3
+      W.I.P.
     </div>
   </React.StrictMode>,
   document.getElementById('root')
