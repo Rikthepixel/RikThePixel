@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      Sup x2
+      Sup x3
     </div>
   </React.StrictMode>,
   document.getElementById('root')
