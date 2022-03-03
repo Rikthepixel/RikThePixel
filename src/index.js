@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -7,5 +8,5 @@ ReactDOM.render(
       W.I.P.
     </div>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('react-root')
 );
