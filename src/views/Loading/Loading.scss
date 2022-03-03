@@ -1,0 +1,89 @@
+@keyframes loading-keys {
+    0% {
+        rotate: 0deg;
+    }
+
+    12.49% {
+        rotate: 0deg;
+    }
+
+    12.5% {
+        rotate: 45deg;
+    }
+
+    24.99% {
+        rotate: 45deg;
+    }
+
+    25% {
+        rotate: 90deg;
+    }
+
+    37.49% {
+        rotate: 90deg;
+    }
+
+    37.5% {
+        rotate: 135deg;
+    }
+
+    49.99% {
+        rotate: 135deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    62.49% {
+        rotate: 180deg;
+    }
+
+    62.5% {
+        rotate: 225deg;
+    }
+
+    74.99% {
+        rotate: 225deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    87.49% {
+        rotate: 270deg;
+    }
+
+    87.5% {
+        rotate: 315deg;
+    }
+
+    99.99% {
+        rotate: 315deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader::after {
+    --width: 0.1em;
+
+    content: "";
+    position: absolute;
+    background-color: white;
+    font-size: 10rem;
+    height: 1em;
+    width: var(--width);
+    animation: loading-keys infinite linear 1.25s;
+    border-radius: 0.01em;
+}
