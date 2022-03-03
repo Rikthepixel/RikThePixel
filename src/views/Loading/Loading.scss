@@ -76,14 +76,16 @@
 }
 
 .loader::after {
-    --width: 0.1em;
-
     content: "";
+
+    --width: 0.1em;
+    --height: 1.25em;
+
     position: absolute;
     background-color: white;
     font-size: 10rem;
-    height: 1em;
+    height: var(--height);
     width: var(--width);
     animation: loading-keys infinite linear 1.25s;
-    border-radius: 0.01em;
+    border-radius: calc(var(--width) * 0.1);
 }

@@ -4,16 +4,25 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import "./index.scss";
 
 import Front from "./views/Front";
+import Layout from "./views/Layout";
 import Loading from "./views/Loading";
-const Contact = React.lazy(() => import("./views/Contact"));
+
+const Projects = React.lazy(() => import("./views/Projects"));
 const Timeline = React.lazy(() => import("./views/Timeline"));
+const Contact = React.lazy(() => import("./views/Contact"));
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename="RikThePixel">
       <Routes>
-        <Route path='/'>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Front />} />
+          <Route path="Loading" element={<Loading />} />
+          <Route path='Projects' element={
+            <Suspense fallback={<Loading />}>
+              <Projects />
+            </Suspense>}
+          />
           <Route path='Timeline' element={
             <Suspense fallback={<Loading />}>
               <Timeline />

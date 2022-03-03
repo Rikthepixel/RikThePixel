@@ -10,11 +10,14 @@ body {
     display: flex;
     flex-direction: column;
 
-    color: white;
-    background-color: rgb(47, 3, 53);
+    background-color: #f9c7ff;
 }
 
 #react-root {
     display: flex;
     flex: 1;
+}
+
+a.active {
+    font-weight: 900;
 }
