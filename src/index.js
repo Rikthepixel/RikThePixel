@@ -1,11 +1,10 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import "./index.scss";
 
 import Front from "./views/Front";
 import Loading from "./views/Loading";
-import "./index.scss";
-
 const Contact = React.lazy(() => import("./views/Contact"));
 const Timeline = React.lazy(() => import("./views/Timeline"));
 
