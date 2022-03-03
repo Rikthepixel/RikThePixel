@@ -12,5 +12,5 @@ I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherl
 - Game development
 
 ## 📈 Github Stats:
-![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&layout=compact&theme=dark&hide_title=true&count_private=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RikThePixel&layout=default&theme=dark)
+![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RikThePixel&theme=dark&layout=compact)
