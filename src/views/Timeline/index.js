@@ -6,7 +6,9 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div>Timeline</div>
+    <main className="p-4 flex-1">
+      Timeline
+    </main>
   );
 };
 

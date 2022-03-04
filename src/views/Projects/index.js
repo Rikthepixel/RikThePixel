@@ -6,7 +6,9 @@ const Projects = () => {
     }, []);
 
     return (
-        <div>Projects</div>
+        <main className="p-4 flex-1">
+            Projects
+        </main>
     );
 };
 

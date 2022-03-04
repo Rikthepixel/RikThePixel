@@ -6,7 +6,9 @@ const Contact = () => {
   }, []);
 
   return (
-    <div>Contact</div>
+    <main className="p-4 flex-1">
+      Contact
+    </main>
   );
 };
 

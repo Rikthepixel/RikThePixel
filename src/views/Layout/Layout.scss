@@ -1,0 +1,29 @@
+.layout-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.layout-main-nav {
+
+    color: white;
+
+    a {
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: var(--light);
+        }
+
+        &:active {
+            transition: color .1s ease-in-out;
+            color: var(--secondary);
+        }
+
+        &.active {
+            font-weight: 900;
+            color: var(--active);
+        }
+    }
+}

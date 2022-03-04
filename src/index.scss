@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary: #2f0335;
+    --secondary: #d077db;
+    --light: #f9c7ff;
+    --active: #fd30fd;
+}
+
 html,
 body {
     margin: 0;
@@ -10,14 +17,10 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: #f9c7ff;
+    background-color: var(--light);
 }
 
 #react-root {
     display: flex;
     flex: 1;
-}
-
-a.active {
-    font-weight: 900;
 }
