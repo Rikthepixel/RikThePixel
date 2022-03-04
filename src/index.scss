@@ -8,9 +8,9 @@
 }
 
 :root {
-    --primary: #2f0335;
+    --primary: #6d1179;
     --secondary: #d077db;
-    --light: #f9c7ff;
+    --light: #fbd7ff;
     --active: #fd30fd;
 
     font-family: Consolas, monospace, "Roboto Slab";
@@ -23,11 +23,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-    background-color: var(--light);
+    overflow: hidden;
 }
 
 #react-root {
     display: flex;
     flex: 1;
+    overflow: hidden;
 }
