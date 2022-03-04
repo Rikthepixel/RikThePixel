@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+
 :root {
     --primary: #2f0335;
     --secondary: #d077db;
     --light: #f9c7ff;
     --active: #fd30fd;
+
+    font-family: Consolas, monospace, "Roboto Slab";
 }
 
 html,

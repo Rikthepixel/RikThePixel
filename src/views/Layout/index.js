@@ -6,7 +6,7 @@ const Layout = () => {
     return (
         <div className="layout-container">
             <Outlet />
-            <nav aria-label="primary" className="layout-main-nav py-4 px-6 grid grid-cols-2 place-items-center gap-2 bg-primary font-mono sm:flex sm:justify-around">
+            <nav aria-label="primary" role="navigation" className="layout-main-nav py-4 px-6 grid grid-cols-2 place-items-center gap-2 bg-primary font-mono sm:flex sm:justify-around">
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/Projects">Projects</NavLink>
                 <NavLink to="/Timeline">Experience</NavLink>
