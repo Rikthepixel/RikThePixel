@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import "./Front.scss";
-import MeWithDot from "../../images/Personal/MeWithDot.jpg";
+import MeWithDot from "../../images/Personal/MeWithDotCompressed.jpg";
 import Emoji from "../../components/Emoji";
 
 const Front = () => {
@@ -20,7 +20,7 @@ const Front = () => {
               src={MeWithDot}
             />
             <div className="text-xs text-zinc-600 hidden md:block">
-              ( I am the human, not the dog )
+              ( I'm the human, not the dog )
             </div>
           </span>
           <h1>
