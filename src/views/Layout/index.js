@@ -8,7 +8,7 @@ const Layout = () => {
             <div className="flex-1 flex flex-col overflow-auto">
                 <Outlet />
             </div>
-            <nav aria-label="primary" role="navigation" className="layout-main-nav py-4 px-6 grid grid-cols-2 place-items-center gap-2 bg-primary sm:flex sm:justify-around">
+            <nav aria-label="primary" role="navigation" className="layout-main-nav py-4 px-6 grid grid-cols-2 place-items-center gap-2 bg-dark sm:flex sm:justify-around">
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/Projects">Projects</NavLink>
                 <NavLink to="/Timeline">Experience</NavLink>

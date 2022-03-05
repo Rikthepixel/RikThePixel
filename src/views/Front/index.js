@@ -11,10 +11,10 @@ const Front = () => {
   return (
     <main className="main-front-container">
       <section aria-label="Who am I?" className="flex flex-col md:gap-4 md:flex-row md:justify-center">
-        <header className="bg-light md:bg-slate-200 rounded-t-lg p-4 md:rounded-lg text-[2rem] font-bold text-center flex flex-col-reverse items-center justify-center md:flex-col md:w-2/4 lg:w-fit">
+        <header className="bg-light md:bg-accent rounded-t-lg p-4 md:rounded-lg text-[2rem] font-bold text-center flex flex-col-reverse items-center justify-center md:flex-col md:w-2/4 lg:w-fit">
           <span>
             <img
-              className="mx-4 rounded-md border-slate-100 border-[0.1em] inline w-5/6 max-w-sm md:max-w-lg md:border-none"
+              className="mx-4 rounded-md outline-accent outline outline-[0.2em] inline w-5/6 max-w-sm md:max-w-lg md:border-none"
               loading="lazy"
               alt="A picture of me with dogs 😜"
               src={MeWithDot}
@@ -45,7 +45,7 @@ const Front = () => {
               </h2>
             </header>
             <article>
-              I love experimenting with different technologies! I try to give at least a f
+              I love experimenting with different technologies!
             </article>
           </section>
           <section aria-label="Passions" className="text-center md:text-right md:pl-14">
@@ -56,13 +56,14 @@ const Front = () => {
             </header>
             <article>
               The programming languages I enjoy writing in are <span className="text-yellow-500">Javascript</span>, <span className="text-sky-500">Typescript</span> and <span className="text-blue-900">Lua</span>.
-              If I were to choose my favorite technologies I would choose <span className="text-blue-400">ReactJS</span>, <span className="text-gray-800">Prisma</span> and <span className="text-pink-500">Love<span className="text-blue-400">2D</span></span>.
+              If I were to choose my favorite technologies I would choose <span className="text-blue-400">ReactJS</span> and <span className="text-gray-800">Prisma</span>
+              {/* and <span className="text-pink-500">Love<span className="text-blue-400">2D</span></span> */}.
             </article>
           </section>
         </article>
       </section>
       <section aria-label="Highlighted projects">
-        <header className="bg-primary text-white p-4 rounded-t-lg">
+        <header className="bg-dark text-white p-4 rounded-t-lg">
           <h1>
             Highlighted projects <Emoji>✨</Emoji>
           </h1>
