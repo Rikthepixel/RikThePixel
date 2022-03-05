@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import "./Layout.scss";
 
 const PageLink = ({ className, ...props }) => {
-    return <NavLink className="bg-secondary hover:bg-dark active:bg-accent active:text-zinc-600 current-page:bg-active text-center p-2 rounded-lg w-full md:basis-full " {...props} />;
+    return <NavLink className="bg-secondary hover:bg-dark hover:active:bg-accent hover:active:text-zinc-600 current-page:bg-active text-center p-2 rounded-lg w-full md:basis-full " {...props} />;
 };
 
 const Layout = () => {
