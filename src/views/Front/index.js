@@ -10,11 +10,11 @@ const Front = () => {
 
   return (
     <main className="main-front-container">
-      <section aria-label="Who am I?" className="flex flex-col md:gap-4 md:flex-row md:justify-center">
-        <header className="bg-light md:bg-accent rounded-t-lg p-4 md:rounded-lg text-[2rem] font-bold text-center flex flex-col-reverse items-center justify-center md:flex-col md:w-2/4 lg:w-fit">
+      <section aria-label="Who am I?" className="flex flex-col gap-4 md:flex-row md:justify-center">
+        <header className="rounded-lg text-[2rem] font-bold text-center flex flex-col-reverse items-center justify-center md:flex-col md:w-2/4 lg:w-fit">
           <span>
             <img
-              className="mx-4 rounded-md outline-accent outline outline-[0.2em] inline w-5/6 max-w-sm md:max-w-lg md:border-none"
+              className="mx-4 rounded-md inline w-5/6 max-w-sm md:max-w-lg md:border-none"
               loading="lazy"
               alt="A picture of me with dogs 😜"
               src={MeWithDot}
@@ -27,7 +27,7 @@ const Front = () => {
             Who am I? <Emoji>🤩</Emoji>
           </h1>
         </header>
-        <article className="bg-light rounded-b-lg md:rounded-lg p-4 flex flex-col justify-center gap-6 w-fit md:w-full 2xl:max-w-[100rem]">
+        <article className="bg-light rounded-lg p-4 flex flex-col justify-center gap-6 w-fit md:w-full 2xl:max-w-[100rem]">
           <section aria-label="Introduction" className="text-center md:text-left md:pr-14">
             <header>
               <h2 className="text-[1.8rem]">
@@ -63,12 +63,12 @@ const Front = () => {
         </article>
       </section>
       <section aria-label="Highlighted projects">
-        <header className="bg-dark text-white p-4 rounded-t-lg">
+        <header className="text-[1.75rem] text-center">
           <h1>
             Highlighted projects <Emoji>✨</Emoji>
           </h1>
         </header>
-        <article className="bg-light rounded-b-lg h-64">
+        <article className="bg-light rounded-lg h-64">
 
         </article>
       </section>
