@@ -43,8 +43,9 @@ const Front = () => {
   }, []);
 
   return (
-    <main className="flex-1">
-      <div className="max-h-[80vh] p-4 pb-0 flex flex-col flex-1">
+    <main className="flex-1 flex flex-col gap-4 px-4">
+      <h1 className="w-full text-center text-[3rem]">Who am I?</h1>
+      <div className="max-h-[80vh] flex flex-col flex-1">
         <Snippets aria-label="Who am I?" className="overflow-hidden gap-4 children:overflow-hidden children:rounded-lg">
           <SnippetHeader
             className="flex flex-col h-full"
@@ -65,10 +66,9 @@ const Front = () => {
             aria-label="Hello, I am Rik!"
             className=""
             title={<>
-              Who am I?
+              Hello, I am Rik!<Emoji>👋</Emoji>
             </>}
             content={<>
-              <h2>Hello, I am Rik!<Emoji>👋</Emoji></h2>
               I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherlands.
             </>}
           />
@@ -93,7 +93,7 @@ const Front = () => {
               More about me
           </h1>
         </header> */}
-        <Snippets className="gap-4 p-4 children:rounded-lg children:justify-start">
+        <Snippets className="gap-4 children:rounded-lg children:justify-start">
           <Snippet
             aria-label="Passions"
             title={<>Passions<Emoji>❤</Emoji></>}
