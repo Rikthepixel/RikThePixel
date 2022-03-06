@@ -7,7 +7,7 @@ const Snippets = ({ children, className, ...props }) => {
   return (
     <div
       {...props}
-      className={`flex flex-col md:flex-row md:justify-center ${className ?? ""}`}
+      className={`grid grid-cols-[1fr] grid-row-[1fr] md:grid-cols-[1fr_1fr] md:place-items-center children:h-full children:w-full ${className ?? ""}`}
     >
       {children}
     </div>
@@ -16,7 +16,7 @@ const Snippets = ({ children, className, ...props }) => {
 
 const SnippetHeader = ({ content, className, ...props }) => {
   return (
-    <header className={`text-center basis-full ${className}`} {...props}>
+    <header className={`text-center h-full ${className}`} {...props}>
       {content}
     </header>
   );
@@ -44,10 +44,10 @@ const Front = () => {
 
   return (
     <main className="flex-1">
-      <div className="max-h-[90vh] p-4 pb-0 flex flex-col flex-1">
-        <Snippets aria-label="Who am I?" className="gap-0 rounded-lg overflow-hidden">
+      <div className="max-h-[80vh] p-4 pb-0 flex flex-col flex-1">
+        <Snippets aria-label="Who am I?" className="overflow-hidden gap-4 children:overflow-hidden children:rounded-lg">
           <SnippetHeader
-            className="flex flex-col basis-full"
+            className="flex flex-col h-full"
             content={<div className="relative h-full flex items-center justify-center">
               <img
                 width="1544"
