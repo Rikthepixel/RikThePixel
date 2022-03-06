@@ -45,7 +45,7 @@ const Front = () => {
   return (
     <main className="flex-1 flex flex-col gap-4 px-4">
       <h1 className="w-full text-center text-[3rem]">Who am I?</h1>
-      <div className="max-h-[80vh] flex flex-col flex-1">
+      <div className="max-h-[80vh] flex flex-col">
         <Snippets aria-label="Who am I?" className="overflow-hidden gap-4 children:overflow-hidden children:rounded-lg">
           <SnippetHeader
             className="flex flex-col h-full"
