@@ -8,40 +8,51 @@ const PageLink = ({ className, ...props }) => {
 
 const Layout = () => {
     const outletContainerRef = useRef();
-    const navbarRef = useRef();
+    const navbarContainerRef = useRef();
     useEffect(() => {
-        if (!navbarRef.current || !outletContainerRef.current) return null;
+        if (!navbarContainerRef.current || !outletContainerRef.current) return null;
 
-        outletContainerRef.current.style.paddingBottom = navbarRef.current.offsetHeight + "px";
-        const observer = new ResizeObserver((entries) => {
-            outletContainerRef.current.style.paddingBottom = entries[0].target.offsetHeight + "px";
+        outletContainerRef.current.style.paddingBottom = navbarContainerRef.current.offsetHeight + "px";
+        const navObserver = new ResizeObserver(
+            (entries) => outletContainerRef.current.style.paddingBottom = entries[0].target.offsetHeight + "px"
+        );
+        navObserver.observe(navbarContainerRef.current);
+
+        const outletObserver = new ResizeObserver((entries) => {
+            const target = entries[0].target;
+            navbarContainerRef.current.style.paddingRight = target.offsetWidth - target.clientWidth + "px";
         });
-        observer.observe(navbarRef.current);
+        outletObserver.observe(outletContainerRef.current);
 
         return () => {
-            observer.disconnect();
+            navObserver.disconnect();
+            outletObserver.disconnect();
         };
-    }, [navbarRef.current, outletContainerRef.current]);
+    }, [navbarContainerRef.current, outletContainerRef.current]);
 
     return (
         <div className="layout-container">
             <div
                 ref={outletContainerRef}
-                className="flex-1 flex flex-col overflow-auto"
+                className="flex-1 flex flex-col overflow-y-auto"
             >
                 <Outlet />
             </div>
-            <nav
-                ref={navbarRef}
-                aria-label="primary"
-                role="navigation"
-                className="absolute bottom-0 w-full text-white py-4 px-6 grid grid-cols-[1fr_1fr] place-items-center gap-2 sm:flex sm:justify-around"
+            <div
+                ref={navbarContainerRef}
+                className="absolute bottom-0 w-full text-white"
             >
-                <PageLink to="/">Home</PageLink>
-                <PageLink to="/Projects">Projects</PageLink>
-                <PageLink to="/Timeline">Timeline</PageLink>
-                <PageLink to="/Contact" >Contact</PageLink>
-            </nav>
+                <nav
+                    aria-label="primary"
+                    role="navigation"
+                    className="py-4 px-6 grid grid-cols-[1fr_1fr] place-items-center gap-2 sm:flex sm:justify-around"
+                >
+                    <PageLink to="/">Home</PageLink>
+                    <PageLink to="/Projects">Projects</PageLink>
+                    <PageLink to="/Timeline">Timeline</PageLink>
+                    <PageLink to="/Contact" >Contact</PageLink>
+                </nav>
+            </div>
         </div>
     );
 };
