@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavLink, Outlet } from "react-router-dom";
 import "./Layout.scss";
 
@@ -7,12 +7,36 @@ const PageLink = ({ className, ...props }) => {
 };
 
 const Layout = () => {
+    const outletContainerRef = useRef();
+    const navbarRef = useRef();
+    useEffect(() => {
+        if (!navbarRef.current || !outletContainerRef.current) return null;
+
+        outletContainerRef.current.style.paddingBottom = navbarRef.current.offsetHeight + "px";
+        const observer = new ResizeObserver((entries) => {
+            outletContainerRef.current.style.paddingBottom = entries[0].target.offsetHeight + "px";
+        });
+        observer.observe(navbarRef.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [navbarRef.current, outletContainerRef.current]);
+
     return (
         <div className="layout-container">
-            <div className="flex-1 flex flex-col overflow-auto">
+            <div
+                ref={outletContainerRef}
+                className="flex-1 flex flex-col overflow-auto"
+            >
                 <Outlet />
             </div>
-            <nav aria-label="primary" role="navigation" className="text-white py-4 px-6 grid grid-cols-[1fr_1fr] place-items-center gap-2 sm:flex sm:justify-around">
+            <nav
+                ref={navbarRef}
+                aria-label="primary"
+                role="navigation"
+                className="absolute bottom-0 w-full text-white py-4 px-6 grid grid-cols-[1fr_1fr] place-items-center gap-2 sm:flex sm:justify-around"
+            >
                 <PageLink to="/">Home</PageLink>
                 <PageLink to="/Projects">Projects</PageLink>
                 <PageLink to="/Timeline">Timeline</PageLink>
