@@ -16,6 +16,8 @@ module.exports = {
   plugins: [
     plugin(({ addVariant }) => {
       addVariant("current-page", "&.active");
+      addVariant("children", "&>*");
+      addVariant("decendants", "& *");
     })
   ],
 };
