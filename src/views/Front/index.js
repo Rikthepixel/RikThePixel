@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import "./Front.scss";
-import MeWithDot from "../../images/Personal/MeWithDotCompressed.jpg";
+import MeWithDot from "../../images/Personal/MeWithDot.webp";
 import Emoji from "../../components/Emoji";
 
 const Snippets = ({ children, className, ...props }) => {
@@ -50,8 +50,9 @@ const Front = () => {
             className="flex flex-col basis-full"
             content={<div className="relative h-full flex items-center justify-center">
               <img
+                width="1544"
+                height="1158"
                 className="inline object-contain h-full"
-                loading="lazy"
                 alt="A picture of me with dogs 😜"
                 src={MeWithDot}
               />
