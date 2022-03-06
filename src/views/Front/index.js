@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import "./Front.scss";
 import MeWithDot from "../../images/Personal/MeWithDot.webp";
 import Emoji from "../../components/Emoji";
+import RandomText from "../../components/RandomText";
 
 const Snippets = ({ children, className, ...props }) => {
   return (
@@ -40,28 +41,31 @@ const Snippet = ({ title, content, className, ...props }) => {
 const Front = () => {
   useEffect(() => {
     document.title = "Rik den Breejen";
+
   }, []);
 
   return (
     <main className="flex-1 flex flex-col gap-4 px-4">
       <h1 className="w-full text-center text-[3rem]">Who am I?</h1>
-      <div className="max-h-[80vh] flex flex-col">
-        <Snippets aria-label="Who am I?" className="overflow-hidden gap-4 children:overflow-hidden children:rounded-lg">
-          <SnippetHeader
-            className="flex flex-col h-full"
-            content={<div className="relative h-full flex items-center justify-center">
-              <img
-                width="1544"
-                height="1158"
-                className="inline object-contain h-full"
-                alt="A picture of me with dogs 😜"
-                src={MeWithDot}
+      <div className="max-h-[60vh] flex flex-col">
+        <Snippets aria-label="Who am I?" className="overflow-hidden gap-4 decendants:overflow-hidden decendants:rounded-lg">
+          <div className="relative h-full flex items-center justify-center bg-light">
+            <img
+              width="1544"
+              height="1158"
+              className="inline object-cover h-full"
+              alt="A picture of me with dogs 😜"
+              src={MeWithDot}
+            />
+            <div className="absolute bottom-1 text-center text-xs text-white p-1 hidden md:block bg-black bg-opacity-20 ">
+              <RandomText
+                options={[
+                  "( I'm the human, not the dog )",
+                  "( I'm the dog, not the human )"
+                ]}
               />
-              <div className="absolute bottom-0 w-full text-center text-xs text-white py-2 hidden md:block">
-                ( I'm the human, not the dog )
-              </div>
-            </div>}
-          />
+            </div>
+          </div>
           <Snippet
             aria-label="Hello, I am Rik!"
             className=""
