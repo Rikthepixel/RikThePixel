@@ -23,9 +23,9 @@ const SnippetHeader = ({ content, className, ...props }) => {
   );
 };
 
-const Snippet = ({ title, content, className, ...props }) => {
+const Snippet = ({ title, content, className = "", ...props }) => {
   return (
-    <article className="bg-light text-center flex flex-col basis-full items-center justify-center p-4" {...props}>
+    <article className={`text-center flex flex-col basis-full items-center justify-center p-4 ${className}`} {...props}>
       <header>
         <h2 className="text-[1.8rem]">
           {title}
@@ -41,20 +41,19 @@ const Snippet = ({ title, content, className, ...props }) => {
 const Front = () => {
   useEffect(() => {
     document.title = "Rik den Breejen";
-
   }, []);
 
   return (
-    <main className="flex-1 flex flex-col gap-4 px-4">
-      <h1 className="w-full text-center text-[3rem]">Who am I?</h1>
+    <main className="flex-1 flex flex-col gap-6 mt-4 px-4">
+      <h1 className="w-full text-center text-[3rem]">About me?</h1>
       <div className="md:max-h-[60vh] flex flex-col">
         <Snippets aria-label="Who am I?" className="overflow-hidden gap-4 children:overflow-hidden decendants:rounded-lg">
-          <div className="relative h-full flex items-center justify-center bg-light">
+          <div className="relative h-full max-h-[50vh] sm:max-h-[60vh] md:max-h-[unset] flex items-center justify-center bg-light">
             <img
               width="1544"
               height="1158"
               className="inline object-cover h-full"
-              alt="A picture of me with dogs 😜"
+              alt="A picture of me with my dog"
               src={MeWithDot}
             />
             <div className="absolute bottom-1 text-center text-xs text-white p-1 hidden md:block bg-black bg-opacity-20 ">
@@ -68,9 +67,9 @@ const Front = () => {
           </div>
           <Snippet
             aria-label="Hello, I am Rik!"
-            className=""
+            className="bg-dark text-white"
             title={<>
-              Hello, I am Rik!<Emoji>👋</Emoji>
+              Hello, I'm Rik!<Emoji>👋</Emoji>
             </>}
             content={<>
               I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherlands.
@@ -79,25 +78,13 @@ const Front = () => {
         </Snippets>
       </div>
 
-      {/* <section aria-label="Highlighted projects" className="p-4">
-        <header className="text-[1.75rem] text-center">
-          <h1>
-            Highlighted projects <Emoji>✨</Emoji>
+      <section aria-label="More about me" className="mt-12">
+        <header>
+          <h1 className="text-center text-[2rem]">
+            More about me
           </h1>
         </header>
-        <article className="bg-light rounded-lg h-64">
-
-        </article>
-      </section> */}
-
-
-      <section aria-label="More about me">
-        {/* <header>
-          <h1>
-              More about me
-          </h1>
-        </header> */}
-        <Snippets className="gap-4 children:rounded-lg children:justify-start">
+        <Snippets className="gap-4 children:rounded-lg children:justify-start children:bg-light">
           <Snippet
             aria-label="Passions"
             title={<>Passions<Emoji>❤</Emoji></>}
