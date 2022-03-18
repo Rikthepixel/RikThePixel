@@ -25,7 +25,7 @@ const SnippetHeader = ({ content, className, ...props }) => {
 
 const Snippet = ({ title, content, className = "", ...props }) => {
   return (
-    <article className={`text-center flex flex-col basis-full items-center justify-center p-4 ${className}`} {...props}>
+    <article className={`text-center flex flex-col basis-full items-center justify-center p-4 shadow-lg ${className}`} {...props}>
       <header>
         <h2 className="text-[1.8rem]">
           {title}
@@ -56,7 +56,7 @@ const Front = () => {
               alt="A picture of me with my dog"
               src={MeWithDot}
             />
-            <div className="absolute bottom-1 text-center text-xs text-white p-1 hidden md:block bg-black bg-opacity-20 ">
+            <div className="absolute bottom-1 text-center text-xs text-white p-1 hidden md:block bg-black bg-opacity-20">
               <RandomText
                 options={[
                   "( I'm the human, not the dog )",
