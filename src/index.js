@@ -17,7 +17,6 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Front />} />
-          <Route path="Loading" element={<Loading />} />
           <Route path='Projects' element={
             <Suspense fallback={<Loading />}>
               <Projects />
