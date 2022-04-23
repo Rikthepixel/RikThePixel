@@ -10,7 +10,7 @@ const Front = () => {
 
   return (
     <main className="flex-1 flex flex-col mt-4 px-4">
-      
+      WIP
     </main>
   );
 };
