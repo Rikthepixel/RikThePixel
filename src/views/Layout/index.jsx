@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { NavLink, Outlet } from "react-router-dom";
-import "./Layout.scss";
 
 const PageLink = ({ className, ...props }) => {
     return <NavLink className="bg-secondary hover:bg-dark hover:active:bg-light hover:active:text-zinc-600 current-page:bg-active text-center p-2 rounded-lg w-full md:basis-full shadow-lg" {...props} />;
@@ -31,13 +30,8 @@ const Layout = () => {
     }, [navbarContainerRef.current, outletContainerRef.current]);
 
     return (
-        <div className="layout-container">
-            <div
-                ref={outletContainerRef}
-                className="flex-1 flex flex-col overflow-y-auto"
-            >
-                <Outlet />
-            </div>
+        <div className="flex flex-1 justify-between flex-col relative">
+            <Outlet />
             <div
                 ref={navbarContainerRef}
                 className="absolute bottom-0 w-full text-white"

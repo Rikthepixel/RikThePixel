@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Roboto Slab";
-    src: url("./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+    src: url("./res/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 
 :root {
@@ -14,7 +14,7 @@
     --active: #559E13;
     --accent: #B2FF6B;
 
-    font-family: Consolas, monospace, "Roboto Slab";
+    font-family: "Roboto Slab";
 }
 
 html,

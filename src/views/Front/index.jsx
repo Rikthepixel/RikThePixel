@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react';
-import "./Front.scss";
-import Emoji from "../../components/Emoji";
-import RandomText from "../../components/RandomText";
 
 const Front = () => {
   useEffect(() => {
@@ -9,8 +6,10 @@ const Front = () => {
   }, []);
 
   return (
-    <main className="flex-1 flex flex-col mt-4 px-4">
-      WIP
+    <main className="flex-1 flex flex-col overflow-y-auto">
+      <div className="h-screen flex items-center justify-center relative">
+        <span className="text-[20vmin] z-10">W.I.P.</span>
+      </div>
     </main>
   );
 };
