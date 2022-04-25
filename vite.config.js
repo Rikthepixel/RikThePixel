@@ -1,18 +1,23 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import svgr from '@honkhonk/vite-plugin-svgr';
+import prefresh from "@prefresh/vite";
 
 export default defineConfig({
     base: "/RikThePixel/",
+    esbuild: {
+        jsxFactory: 'h',
+        jsxFragment: 'Fragment',
+        jsxInject: `import { h, Fragment } from 'preact'`,
+    },
     plugins: [
-        react(),
+        prefresh(),
         svgr()
     ],
     resolve: {
         alias: {
-            "react": "preact/compat",
             "react-dom/test-utils": "preact/test-utils",
             "react-dom": "preact/compat",
+            "react": "preact/compat",
             "react/jsx-runtime": "preact/jsx-runtime"
         }
     }
