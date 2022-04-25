@@ -1,69 +1,9 @@
 @keyframes loading-keys {
-    0% {
+    from {
         rotate: 0deg;
     }
 
-    12.49% {
-        rotate: 0deg;
-    }
-
-    12.5% {
-        rotate: 45deg;
-    }
-
-    24.99% {
-        rotate: 45deg;
-    }
-
-    25% {
-        rotate: 90deg;
-    }
-
-    37.49% {
-        rotate: 90deg;
-    }
-
-    37.5% {
-        rotate: 135deg;
-    }
-
-    49.99% {
-        rotate: 135deg;
-    }
-
-    50% {
-        rotate: 180deg;
-    }
-
-    62.49% {
-        rotate: 180deg;
-    }
-
-    62.5% {
-        rotate: 225deg;
-    }
-
-    74.99% {
-        rotate: 225deg;
-    }
-
-    75% {
-        rotate: 270deg;
-    }
-
-    87.49% {
-        rotate: 270deg;
-    }
-
-    87.5% {
-        rotate: 315deg;
-    }
-
-    99.99% {
-        rotate: 315deg;
-    }
-
-    100% {
+    to {
         rotate: 360deg;
     }
 }
@@ -74,18 +14,17 @@
     align-items: center;
     justify-content: center;
 
-    &::after {
+    &:after {
         content: "";
 
-        --width: 0.1em;
-        --height: 1.25em;
+        $width: 4vmin;
+        $height: $width * 12.5;
 
         position: absolute;
         background-color: currentColor;
-        font-size: 10rem;
-        height: var(--height);
-        width: var(--width);
-        animation: loading-keys infinite linear 1.25s;
-        border-radius: calc(var(--width) * 0.1);
+        height: $height;
+        width: $width;
+        animation: loading-keys infinite steps(8) 1.25s;
+        border-radius: $width * 0.1;
     }
 }

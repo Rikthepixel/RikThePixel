@@ -1,6 +1,7 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import React, { Suspense } from "react";
+import { render } from 'preact';
+import { ErrorBoundary } from "react-error-boundary";
+import { Route, Routes, Navigate, HashRouter } from 'react-router-dom';
 import "./index.scss";
 
 import Front from "./views/Front";
@@ -10,33 +11,26 @@ import Loading from "./views/Loading";
 const Projects = React.lazy(() => import("./views/Projects"));
 const Timeline = React.lazy(() => import("./views/Timeline"));
 const Contact = React.lazy(() => import("./views/Contact"));
+const loading = <Loading />;
 
-ReactDOM.render(
+const SuspenseRoute = ({ element }) => (
+  <ErrorBoundary><Suspense fallback={loading}>{element}</Suspense></ErrorBoundary>
+);
+
+render(
   <React.StrictMode>
-    <BrowserRouter basename="RikThePixel">
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Front />} />
-          <Route path="Loading" element={<Loading />} />
-          <Route path='Projects' element={
-            <Suspense fallback={<Loading />}>
-              <Projects />
-            </Suspense>}
-          />
-          <Route path='Timeline' element={
-            <Suspense fallback={<Loading />}>
-              <Timeline />
-            </Suspense>}
-          />
-          <Route path='Contact' element={
-            <Suspense fallback={<Loading />}>
-              <Contact />
-            </Suspense>}
-          />
           <Route path="*" element={<Navigate replace to="/" />} />
+          <Route path="Loading" element={loading} />
+          <Route path="Projects" element={<SuspenseRoute element={<Projects />} />} />
+          <Route path="Timeline" element={<SuspenseRoute element={<Timeline />} />} />
+          <Route path="Contact" element={<SuspenseRoute element={<Contact />} />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('react-root')
 );
