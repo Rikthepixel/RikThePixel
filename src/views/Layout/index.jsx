@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from "preact/hooks";
 import { NavLink, Outlet } from "react-router-dom";
 
 const PageLink = ({ className, ...props }) => {
@@ -8,9 +8,13 @@ const PageLink = ({ className, ...props }) => {
 const Layout = () => {
     const outletContainerRef = useRef();
     const navbarContainerRef = useRef();
+    const [outletContext, setOutletContext] = useState([]);
+
     useEffect(() => {
         const navBar = navbarContainerRef.current;
         const outlet = outletContainerRef.current;
+
+        setOutletContext([outletContainerRef.current, navbarContainerRef.current]);
         if (!navBar || !outlet) return null;
 
         outlet.style.paddingBottom = navBar.offsetHeight + "px";
@@ -28,8 +32,8 @@ const Layout = () => {
 
     return (
         <div className="flex flex-1 justify-between flex-col relative">
-            <main ref={outletContainerRef} className="flex-1 flex flex-col overflow-y-auto">
-                <Outlet />
+            <main ref={outletContainerRef} className="flex-1 flex flex-col overflow-y-auto items-center">
+                <Outlet context={outletContext} />
             </main>
             <div
                 ref={navbarContainerRef}

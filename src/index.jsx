@@ -4,13 +4,13 @@ import { ErrorBoundary } from "react-error-boundary";
 import { Route, Routes, Navigate, HashRouter } from 'react-router-dom';
 import "./index.scss";
 
-import Front from "./views/Front";
-import Layout from "./views/Layout";
-import Loading from "./views/Loading";
+import Front from "views/Front";
+import Layout from "views/Layout";
+import Loading from "views/Loading";
 
-const Projects = React.lazy(() => import("./views/Projects"));
-const Timeline = React.lazy(() => import("./views/Timeline"));
-const Contact = React.lazy(() => import("./views/Contact"));
+const Projects = React.lazy(() => import("views/Projects"));
+const Timeline = React.lazy(() => import("views/Timeline"));
+const Contact = React.lazy(() => import("views/Contact"));
 const loading = <Loading />;
 
 const SuspenseRoute = ({ element }) => (

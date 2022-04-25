@@ -18,7 +18,10 @@ export default defineConfig({
             "react-dom/test-utils": "preact/test-utils",
             "react-dom": "preact/compat",
             "react": "preact/compat",
-            "react/jsx-runtime": "preact/jsx-runtime"
+            "react/jsx-runtime": "preact/jsx-runtime",
+            "res": "/src/res",
+            "components": "/src/components",
+            "views": "/src/views"
         }
     }
 });
