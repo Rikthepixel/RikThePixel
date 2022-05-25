@@ -8,8 +8,7 @@ I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherl
 ## 🔭 I am currently learning
 - Typescript
 - ExpressJS
-- Love2D
-- Game development
+- Frontend UI and UX
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
