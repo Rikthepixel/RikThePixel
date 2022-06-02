@@ -4,11 +4,12 @@ I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherl
 
 ## 🛠 I am working on
 - My own portfolio website ([Found here](https://rikthepixel.github.io/))
+- A react-router-dom sitemap maker ([View on NPM](https://www.npmjs.com/package/react-router-sitemap-maker))
 
 ## 🔭 I am currently learning
+- Frontend UI, UX and SEO
 - Typescript
 - ExpressJS
-- Frontend UI and UX
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
