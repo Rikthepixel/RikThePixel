@@ -3,7 +3,7 @@
 I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
-- My own portfolio website ([Found here](https://rikthepixel.github.io/))
+- My own portfolio website ([Found here](https://www.rikdenbreejen.nl/))
 - A react-router-dom sitemap maker ([View on NPM](https://www.npmjs.com/package/react-router-sitemap-maker))
 
 ## 🔭 I am currently learning
