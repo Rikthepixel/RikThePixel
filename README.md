@@ -3,13 +3,11 @@
 I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
-- My own portfolio website ([Found here](https://www.rikdenbreejen.nl/))
-- A react-router-dom sitemap maker ([View on NPM](https://www.npmjs.com/package/react-router-sitemap-maker))
+- A CSWSH checking website ([Found here](https://www.rikdenbreejen.nl/))
 
 ## 🔭 I am currently learning
-- Frontend UI, UX and SEO
+- Material UI (MUI)
 - Typescript
-- ExpressJS
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
