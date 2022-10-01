@@ -1,13 +1,14 @@
 # Sup, My name is Rik! 🖐
 
-I am a 2nd year Software Engineering student at Hogeschool Fontys in the Netherlands.
+I am a 3rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
-- A CSWSH checking website ([Found here](https://www.rikdenbreejen.nl/))
+- Making a video using Remotion
+- Remaking my personal website
 
 ## 🔭 I am currently learning
 - Material UI (MUI)
-- Typescript
+- Remotion
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
