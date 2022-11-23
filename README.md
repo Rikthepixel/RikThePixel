@@ -3,12 +3,13 @@
 I am a 3rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
-- Making a video using Remotion
 - Remaking my personal website
+- My internship project
 
 ## 🔭 I am currently learning
-- Material UI (MUI)
-- Remotion
+- Vue
+- Making packages with Vue
+- Python
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
