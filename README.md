@@ -3,11 +3,11 @@
 I am a 3rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
-- Remaking my personal website
 - Making a modern GitClient
 
 ## 🔭 I am currently learning
-- Headless UI
+- Rust
+- Tauri
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
