@@ -3,7 +3,13 @@
 I am a 3rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
-- Making a modern GitClient
+
+### Making a modern GitClient
+
+Open-source, speed and good looks! All features that will be included in my newest project dubbed "Commit Rocket". Commit Rocket is going to become a modern git client making use of mordern technologies like Tauri and Rust. 
+
+You can go to the organization page to learn more about Commit Rocket:
+https://github.com/commit-rocket
 
 ## 🔭 I am currently learning
 - Rust
