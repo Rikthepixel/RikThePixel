@@ -1,22 +1,16 @@
 # Sup, My name is Rik! 🖐
 
-I am a 3rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
+I am a 4rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
 ## 🛠 I am working on
 
-### Making a modern GitClient
+### Making a federated Facebook Marketplace clone
 
-Open-source, speed and good looks! All features that will be included in my newest project dubbed "Commit Rocket". [Commit Rocket](www.commitrocket.com) is going to become a modern git client making use of mordern technologies like Tauri and Rust. 
-
-Are you interested? Find out more information about Commit Rocket on the website:
-https://www.commitrocket.com
-
-ALSO a lot of our repositories are open-source, you can find them at:
-https://github.com/commit-rocket
+MarketSquare is a Open-source federated marketplace. MarketSquare will be federated just like Mastodon. Which means that you can spin up your own instance and communicate with others.
 
 ## 🔭 I am currently learning
-- Rust
-- Tauri
+- Zustand
+- Microservices
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
