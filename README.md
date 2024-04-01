@@ -2,11 +2,9 @@
 
 I am a 4rd year Software Engineering student at Hogeschool Fontys in the Netherlands.
 
-## 🛠 I am working on
+## 🛠 I am working on [React Blend](https://github.com/Rikthepixel/react-blend)
 
-### Making a federated Facebook Marketplace clone
-
-MarketSquare is a Open-source federated marketplace. MarketSquare will be federated just like Mastodon. Which means that you can spin up your own instance and communicate with others.
+A blend of useful higher order components (hocs) and hooks. Sounds odd right? [Who even uses higher order components!](https://github.com/Rikthepixel/react-blend?tab=readme-ov-file#why-still-use-higher-order-components)  
 
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
