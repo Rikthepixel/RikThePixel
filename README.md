@@ -5,6 +5,14 @@ Currently I attend Fontys University of Applied Sciences, majoring in Software e
 
 My love for coding drives me to spend a lot of my free time programming on personal projects. I often find myself experimenting with and geeking out over new technologies.
 
+## ❤️⚒️ I am working on [Termz](https://github.com/Rikthepixel/termz)
+
+> **Setup terminals on your own terms.**
+
+Termz is a tool that automatally sets up terminal sessions. It already does so much! It opens your tabs, runs your scripts, sets the working directory. Best of all it is cross-platform. Currently Windows terminal and VSCode (and derivatives) are supported, with plans to expand other terminal applications like konsole, but also multiplexers like tmux.
+
+Documentation will be worked on soon.
+
 ## 🛠 I am working on [React Blend](https://github.com/Rikthepixel/react-blend)
 
 A blend of useful higher order components (hocs) and hooks. Sounds odd, right? [Who even uses higher order components!](https://github.com/Rikthepixel/react-blend?tab=readme-ov-file#why-still-use-higher-order-components) Regardless, it's a neat project that would help developers make applications faster in the future!
