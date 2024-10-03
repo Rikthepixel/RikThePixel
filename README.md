@@ -13,10 +13,6 @@ Termz is a tool that automatally sets up terminal sessions. It already does so m
 
 Documentation will be worked on soon.
 
-## 🛠 I am working on [React Blend](https://github.com/Rikthepixel/react-blend)
-
-A blend of useful higher order components (hocs) and hooks. Sounds odd, right? [Who even uses higher order components!](https://github.com/Rikthepixel/react-blend?tab=readme-ov-file#why-still-use-higher-order-components) Regardless, it's a neat project that would help developers make applications faster in the future!
-
 ## 📈 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=RikThePixel&show_icons=true&theme=dark&hide_title=true&count_private=true)
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RikThePixel&theme=dark&layout=compact)
