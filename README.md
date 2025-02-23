@@ -1,7 +1,7 @@
 # Sup, My name is [Rik](https://www.rikdenbreejen.nl/)! 🖐
 
 I am Rik den Breejen, a Software engineer from the Netherlands. My specialization is predominantly in web-development, ranging from front- to back-end. 
-Currently I attend Fontys University of Applied Sciences, majoring in Software engineering. 
+I work for [TinyTronics](https://github.com/TinyTronics). I graduated from Fontys University of Applied Sciences, majoring in Software engineering. 
 
 My love for coding drives me to spend a lot of my free time programming on personal projects. I often find myself experimenting with and geeking out over new technologies.
 
